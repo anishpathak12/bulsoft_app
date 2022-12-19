@@ -1,12 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-import banner from "../public/banner.jpg";
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "../styles/Home.module.css";
+import sampleBanner2 from "../public/sampleBanner2.png";
+import { CommonHero } from "../components/CommonHero";
+import homeHero from "../public/homeHero.jpg";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const para = "Bulsoft is a leading testing service provider specializing in all types of testing and with core focus on BFSI & telecom markets. Bulsoft is the preferred partner for many companies in financial services and telecom segments. With many years of multiple field engagements in matured markets to draw upon, Bulsoft's Independent Validation & Testing Solutions & Services is designed to enable organizations to achieve critical application quality threshold, while doing so at minimal cost, time & future maintenance."
   return (
     <>
       <Head>
@@ -15,7 +18,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <Image src={banner} />
+      {/* <Image src={sampleBanner2} /> */}
+      <div className="bg-[url('../public/sampleBanner2.png')] h-[600px]">
+        <div className="pt-20 pl-10 text-white text-5xl font-bold">
+          <h1 className="mb-3">QUALITY</h1>
+          <h1>RE-DEFINED</h1>
+        </div>
+        <p className="lg:w-1/2 pt-10 pl-10 text-white text-2xl font-semibold sm: pr-10">
+          We understand that product quality is prime for business and consumers,
+          Our test-suite are designed to provide 360 view of all quality activities.
+        </p>
+      </div>
+      <CommonHero sideLine="" heading= "BULSOFT AT GLANCE" content= {para} image= {homeHero} />
     </>
-  )
+  );
 }

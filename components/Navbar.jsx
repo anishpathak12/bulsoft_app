@@ -70,9 +70,10 @@ function classNames(...classes) {
 
 const Navbar = () => {
     return (
-        <Popover className="relative bg-white">
+        <Popover className="relative bg-[rgba(217,217,217,0.5)]">
       <div className="flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
-        <div className="flex justify-start lg:w-0 lg:flex-1">
+        <div className="flex justify-start lg:w-1/3">
+        {/* lg:w-0 lg:flex-1 @logo classes */} 
           <Link href="/">
             <span className="sr-only">Your Company</span>
             <Image
@@ -91,14 +92,14 @@ const Navbar = () => {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </Popover.Button>
         </div>
-        <Popover.Group as="nav" className="hidden space-x-10 md:flex">
+        <Popover.Group as="nav" className="hidden space-x-14 md:flex">
           <Popover className="relative">
             {({ open }) => (
               <>
                 <Popover.Button
                   className={classNames(
                     open ? 'text-gray-900' : 'text-gray-500',
-                    'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                    'group inline-flex items-center rounded-md bg-[rgba(217,217,217,)] text-base font-medium hover:text-gray-900 hover:underline decoration-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                   )}
                 >
                   <span>Services</span>
@@ -159,7 +160,7 @@ const Navbar = () => {
             )}
           </Popover>
 
-          <Link href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900">
+          <Link href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900 hover:underline decoration-2">
             About
           </Link>
           
@@ -170,7 +171,7 @@ const Navbar = () => {
                 <Popover.Button
                   className={classNames(
                     open ? 'text-gray-900' : 'text-gray-500',
-                    'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                    'group inline-flex items-center rounded-md bg-[rgba(217,217,217,)] text-base font-medium hover:text-gray-900 hover:underline decoration-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                   )}
                 >
                   <span>Industries</span>
@@ -212,7 +213,7 @@ const Navbar = () => {
               </>
             )}
           </Popover>
-          <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+          <Link href="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900 hover:underline decoration-2">
             Contact
           </Link>
         </Popover.Group>
