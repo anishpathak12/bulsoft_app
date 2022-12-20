@@ -70,7 +70,7 @@ function classNames(...classes) {
 
 const Navbar = () => {
     return (
-        <Popover className="relative bg-[rgba(217,217,217,0.5)]">
+        <Popover className="relative bg-[rgba(217,217,217,0.25)]">
       <div className="flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div className="flex justify-start lg:w-1/3">
         {/* lg:w-0 lg:flex-1 @logo classes */} 

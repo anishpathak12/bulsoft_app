@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-
 export function CommonHero({ sideLine, heading, content, image }) {
     return (
       <div className="relative overflow-hidden bg-white">

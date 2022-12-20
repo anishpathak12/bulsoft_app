@@ -19,7 +19,7 @@ const About = () => {
           <div>
             <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
               <UsersIcon className="h-6 w-6" aria-hidden="true" />
-            </div>
+            </div> 
           </div>
           <h2 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Deliver what your customers want every time

@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const para = "Bulsoft is a leading testing service provider specializing in all types of testing and with core focus on BFSI & telecom markets. Bulsoft is the preferred partner for many companies in financial services and telecom segments. With many years of multiple field engagements in matured markets to draw upon, Bulsoft's Independent Validation & Testing Solutions & Services is designed to enable organizations to achieve critical application quality threshold, while doing so at minimal cost, time & future maintenance."
+  
   return (
     <>
       <Head>
