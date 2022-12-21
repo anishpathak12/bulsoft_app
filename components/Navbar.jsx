@@ -28,7 +28,7 @@ const services = [
   {
     name: 'Management Services',
     description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    href: '/services/management-services',
     icon: DocumentChartBarIcon,
   },
   // { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
