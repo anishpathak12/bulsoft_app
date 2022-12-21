@@ -1,6 +1,6 @@
-import React from 'react';
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+import React from "react";
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -10,25 +10,23 @@ import {
   ShieldCheckIcon,
   Squares2X2Icon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+} from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import logo from "../public/bulsoftLogo.png";
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const services = [
-
-
   {
-    name: 'Testing Services',
-    description: 'A wide range of testing services..',
-    href: '#',
+    name: "Testing Services",
+    description: "A wide range of testing services..",
+    href: "#",
     icon: ShieldCheckIcon,
   },
   {
-    name: 'Management Services',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '/services/management-services',
+    name: "Management Services",
+    description: "Speak directly to your customers in a more meaningful way.",
+    href: "/services/management-services",
     icon: DocumentChartBarIcon,
   },
   // { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
@@ -50,30 +48,43 @@ const services = [
   //   href: '#',
   //   icon: DocumentChartBarIcon,
   // },
-]
+];
 const resources = [
-
-
   {
-    name: 'Banking and Financial Markets ',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
+    name: "Banking and Financial Markets ",
+    description:
+      "Get all of your questions answered in our forums or contact support.",
+    href: "#",
   },
-  { name: 'Healthcare', description: 'Learn how to maximize our platform to get the most out of it.', href: '#' },
-  { name: 'Communications and Media ', description: 'See what meet-ups and other events we might be planning near you.', href: '#' },
-  { name: 'Retail', description: 'Understand how we take your privacy seriously.', href: '#' },
-]
+  {
+    name: "Healthcare",
+    description:
+      "Learn how to maximize our platform to get the most out of it.",
+    href: "#",
+  },
+  {
+    name: "Communications and Media ",
+    description:
+      "See what meet-ups and other events we might be planning near you.",
+    href: "#",
+  },
+  {
+    name: "Retail",
+    description: "Understand how we take your privacy seriously.",
+    href: "#",
+  },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = () => {
-    return (
-        <Popover className="relative bg-[rgba(217,217,217,0.25)]">
+  return (
+    <Popover className="relative bg-[rgba(217,217,217,0.25)]">
       <div className="flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div className="flex justify-start lg:w-1/3">
-        {/* lg:w-0 lg:flex-1 @logo classes */} 
+          {/* lg:w-0 lg:flex-1 @logo classes */}
           <Link href="/">
             <span className="sr-only">Your Company</span>
             <Image
@@ -83,7 +94,6 @@ const Navbar = () => {
               // width={200}
               // height={200}
             />
-        
           </Link>
         </div>
         <div className="-my-2 -mr-2 md:hidden">
@@ -98,15 +108,15 @@ const Navbar = () => {
               <>
                 <Popover.Button
                   className={classNames(
-                    open ? 'text-gray-900' : 'text-gray-500',
-                    'group inline-flex items-center rounded-md bg-[rgba(217,217,217,)] text-base font-medium hover:text-gray-900 hover:underline decoration-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                    open ? "text-gray-900" : "text-gray-700",
+                    "group inline-flex items-center rounded-md bg-[rgba(217,217,217,)] text-lg font-medium hover:text-gray-900 hover:underline decoration-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   )}
                 >
                   <span>Services</span>
                   <ChevronDownIcon
                     className={classNames(
-                      open ? 'text-gray-600' : 'text-gray-400',
-                      'ml-2 h-5 w-5 group-hover:text-gray-500'
+                      open ? "text-gray-800" : "text-gray-600",
+                      "ml-2 h-5 w-5 group-hover:text-gray-500"
                     )}
                     aria-hidden="true"
                   />
@@ -131,11 +141,18 @@ const Navbar = () => {
                             className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                           >
                             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
-                              <solution.icon className="h-6 w-6" aria-hidden="true" />
+                              <solution.icon
+                                className="h-6 w-6"
+                                aria-hidden="true"
+                              />
                             </div>
                             <div className="ml-4">
-                              <p className="text-base font-medium text-gray-900">{solution.name}</p>
-                              <p className="mt-1 text-sm text-gray-500">{solution.description}</p>
+                              <p className="text-base font-medium text-gray-900">
+                                {solution.name}
+                              </p>
+                              <p className="mt-1 text-sm text-gray-500">
+                                {solution.description}
+                              </p>
                             </div>
                           </Link>
                         ))}
@@ -160,25 +177,27 @@ const Navbar = () => {
             )}
           </Popover>
 
-          <Link href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900 hover:underline decoration-2">
+          <Link
+            href="/about"
+            className="text-lg font-medium text-gray-700 hover:text-gray-900 hover:underline decoration-2"
+          >
             About
           </Link>
-          
 
           <Popover className="relative">
             {({ open }) => (
               <>
                 <Popover.Button
                   className={classNames(
-                    open ? 'text-gray-900' : 'text-gray-500',
-                    'group inline-flex items-center rounded-md bg-[rgba(217,217,217,)] text-base font-medium hover:text-gray-900 hover:underline decoration-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                    open ? "text-gray-900" : "text-gray-700",
+                    "group inline-flex items-center rounded-md bg-[rgba(217,217,217,)] text-lg font-medium hover:text-gray-900 hover:underline decoration-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   )}
                 >
                   <span>Industries</span>
                   <ChevronDownIcon
                     className={classNames(
-                      open ? 'text-gray-600' : 'text-gray-400',
-                      'ml-2 h-5 w-5 group-hover:text-gray-500'
+                      open ? "text-gray-800" : "text-gray-600",
+                      "ml-2 h-5 w-5 group-hover:text-gray-500"
                     )}
                     aria-hidden="true"
                   />
@@ -202,8 +221,12 @@ const Navbar = () => {
                             href={resource.href}
                             className="-m-3 block rounded-md p-3 hover:bg-gray-50"
                           >
-                            <p className="text-base font-medium text-gray-900">{resource.name}</p>
-                            <p className="mt-1 text-sm text-gray-500">{resource.description}</p>
+                            <p className="text-base font-medium text-gray-900">
+                              {resource.name}
+                            </p>
+                            <p className="mt-1 text-sm text-gray-500">
+                              {resource.description}
+                            </p>
                           </Link>
                         ))}
                       </div>
@@ -213,7 +236,10 @@ const Navbar = () => {
               </>
             )}
           </Popover>
-          <Link href="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900 hover:underline decoration-2">
+          <Link
+            href="/contact"
+            className="text-lg font-medium text-gray-700 hover:text-gray-900 hover:underline decoration-2"
+          >
             Contact
           </Link>
         </Popover.Group>
@@ -239,16 +265,15 @@ const Navbar = () => {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
+        <Popover.Panel
+          focus
+          className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
+        >
           <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <Image
-                    className="h-8 w-auto"
-                    src={logo}
-                    alt="Your Company"
-                  />
+                  <Image className="h-8 w-auto" src={logo} alt="Your Company" />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -268,7 +293,9 @@ const Navbar = () => {
                       <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white">
                         <solution.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
-                      <div className="ml-4 text-base font-medium text-gray-900">{solution.name}</div>
+                      <div className="ml-4 text-base font-medium text-gray-900">
+                        {solution.name}
+                      </div>
                     </Link>
                   ))}
                 </nav>
@@ -276,7 +303,10 @@ const Navbar = () => {
             </div>
             <div className="py-6 px-5">
               <div className="grid grid-cols-2 gap-4">
-                <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                <Link
+                  href="/about"
+                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
                   About
                 </Link>
 
@@ -284,7 +314,10 @@ const Navbar = () => {
                   Contact
                 </Link> */}
 
-                <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                <Link
+                  href="#"
+                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
                   Industries
                 </Link>
                 {resources.map((resource) => (
@@ -296,7 +329,10 @@ const Navbar = () => {
                     {resource.name}
                   </Link>
                 ))}
-                <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                <Link
+                  href="/contact"
+                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
                   Contact
                 </Link>
               </div>
@@ -319,7 +355,7 @@ const Navbar = () => {
         </Popover.Panel>
       </Transition>
     </Popover>
-    );
+  );
 };
 
 export default Navbar;

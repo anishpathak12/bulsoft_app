@@ -211,7 +211,7 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-          <p className="mt-8 text-base text-gray-400 md:order-1 md:mt-0">
+          <p className="mt-8 text-base text-gray-500 md:order-1 md:mt-0">
             &copy; 2022 Bulsoft, Inc. All rights reserved.
           </p>
         </div>
