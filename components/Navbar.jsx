@@ -174,7 +174,7 @@ const Navbar = () => {
                     'group inline-flex items-center rounded-md bg-[rgba(217,217,217,)] text-base font-medium hover:text-gray-900 hover:underline decoration-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                   )}
                 >
-                  <span>Industries</span>
+                  <Link href="/industries"><span>Industries</span></Link>
                   <ChevronDownIcon
                     className={classNames(
                       open ? 'text-gray-600' : 'text-gray-400',
