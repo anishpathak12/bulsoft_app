@@ -20,7 +20,7 @@ const services = [
   {
     name: "Testing Services",
     description: "A wide range of testing services..",
-    href: "#",
+    href: "/services/testing-services",
     icon: ShieldCheckIcon,
   },
   {
@@ -51,19 +51,19 @@ const services = [
 ];
 const resources = [
   {
-    name: "Banking and Financial Markets ",
+    name: "Banking",
     description:
       "Get all of your questions answered in our forums or contact support.",
-    href: "#",
+    href: "/industries",
   },
   {
-    name: "Healthcare",
+    name: "Insurance",
     description:
       "Learn how to maximize our platform to get the most out of it.",
     href: "#",
   },
   {
-    name: "Communications and Media ",
+    name: "Payments",
     description:
       "See what meet-ups and other events we might be planning near you.",
     href: "#",
