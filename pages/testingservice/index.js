@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const Industries = () => {
+const Testing = () => {
     return (
     <div>        
         <div className='p-16 flex items-center justify-center'>        
@@ -55,4 +55,4 @@ const Industries = () => {
     )
 }
 
-export default Industries
+export default Testing
