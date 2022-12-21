@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import requireMgmt from "../public/requireMgmt.webp"
 
-const Management = ({img, heading1, heading2, para, lists }) => {
+const Management = ({img, heading1, heading2, para, lists, listHeading }) => {
     return (
         <div className="relative bg-white">
       <div className="lg:absolute lg:inset-0">
@@ -35,13 +35,11 @@ const Management = ({img, heading1, heading2, para, lists }) => {
               <p>
                 Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem arcu, metus, egestas netus cursus. In.
               </p> */}
+              <h5 className='text-lg'>{listHeading}</h5>
               <ul role="list">
                 {lists.map((list,i)=>(
                   <li key={i}>{list}</li>
                 ))}
-                {/* <li>Quis elit egestas venenatis mattis dignissim.</li>
-                <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li> */}
               </ul>
               {/* <p>
                 Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet
