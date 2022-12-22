@@ -4,7 +4,7 @@ import Image from "next/image";
 const TestingServices = () => {
   return (
     <div>
-      <div className="p-16 flex items-center justify-center">
+      <div className="p-16 flex  items-center justify-center flex-wrap">
         <div className="pr-20">
           <h1 className="text-6xl ">APPLICATION TESTING</h1>
           <h1 className="text-3xl pt-4">
@@ -28,7 +28,7 @@ const TestingServices = () => {
           />
         </div>
       </div>
-      <div className="flex  items-center justify-center pb-12">
+      <div className="flex  items-center justify-center pb-12 flex-wrap">
         <div className="pb-20 pt-32">
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <Image

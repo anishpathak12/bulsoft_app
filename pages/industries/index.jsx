@@ -4,7 +4,7 @@ import React from "react";
 const Industries = () => {
   return (
     <div>
-      <div className="p-16 flex items-center justify-center  ">
+      <div className="p-16 flex flex-wrap items-center justify-center  ">
         <div className="pr-20">
           <h1 className="text-6xl ">INDUSTRIES</h1>
           <h1 className="text-3xl pt-4">
@@ -22,7 +22,7 @@ const Industries = () => {
           <Image className="pt-12" src="/indus.jpg" width={600} height={800} />
         </div>
       </div>
-      <div className="flex  items-center justify-center pb-12 ">
+      <div className="flex flex-wrap items-center justify-center pb-12 ">
         <div className="pt-14">
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <Image
