@@ -184,7 +184,14 @@ const Navbar = () => {
             About
           </Link>
 
-          <Popover className="relative">
+          <Link
+            href="/industries"
+            className="text-lg font-medium text-gray-700 hover:text-gray-900 hover:underline decoration-2"
+          >
+            Industries
+          </Link>
+
+          {/* <Popover className="relative">
             {({ open }) => (
               <>
                 <Popover.Button
@@ -235,7 +242,7 @@ const Navbar = () => {
                 </Transition>
               </>
             )}
-          </Popover>
+          </Popover> */}
           <Link
             href="/contact"
             className="text-lg font-medium text-gray-700 hover:text-gray-900 hover:underline decoration-2"
@@ -315,12 +322,12 @@ const Navbar = () => {
                 </Link> */}
 
                 <Link
-                  href="#"
+                  href="/industries"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Industries
                 </Link>
-                {resources.map((resource) => (
+                {/* {resources.map((resource) => (
                   <Link
                     key={resource.name}
                     href={resource.href}
@@ -328,7 +335,7 @@ const Navbar = () => {
                   >
                     {resource.name}
                   </Link>
-                ))}
+                ))} */}
                 <Link
                   href="/contact"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
