@@ -4,8 +4,8 @@ import React from "react";
 const Footer = () => {
   const navigation = {
     services: [
-      { name: "Testing Services", href: "#" },
-      { name: "Management Services", href: "#" },
+      { name: "Testing Services", href: "/services/testing-services" },
+      { name: "Management Services", href: "/services/management-services" },
       { name: "Commerce", href: "#" },
       { name: "Insights", href: "#" },
     ],
@@ -16,7 +16,7 @@ const Footer = () => {
       { name: "API Status", href: "#" },
     ],
     company: [
-      { name: "About", href: "#" },
+      { name: "About", href: "/about" },
       { name: "Blog", href: "#" },
       { name: "Jobs", href: "#" },
       { name: "Press", href: "#" },
@@ -212,7 +212,7 @@ const Footer = () => {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-500 md:order-1 md:mt-0">
-            &copy; 2022 Bulsoft, Inc. All rights reserved.
+            &copy; 2022 Bulsoft, All rights reserved.
           </p>
         </div>
       </div>
