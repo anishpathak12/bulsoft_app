@@ -4,36 +4,28 @@ import React from "react";
 const Industries = () => {
   return (
     <div>
-      <div className="p-16 flex flex-wrap items-center justify-center  ">
-        <div className="pr-20">
-          <h1 className="text-6xl ">INDUSTRIES</h1>
-          <h1 className="text-3xl pt-4">
-            Bulsoft produly serve range of industry verticals
-          </h1>
-          <h1 className="text-3xl pt-4">
-            with domain experts, who have in-depth knowledge
-          </h1>
-          <h1 className="text-3xl pt-4">
-            of every industry vertical we serve. Following are{" "}
-          </h1>
-          <h1 className="text-3xl pt-4">the verticals we are operating in. </h1>
-        </div>
-        <div className="">
-          <Image className="pt-12" src="/indus.jpg" width={600} height={800} />
-        </div>
-      </div>
-      <div className="flex flex-wrap items-center justify-center pb-12 ">
-        <div className="pt-14">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+      <h1 className="mt-10  mb-2 text-center font-bold capitalize text-5xl">
+        INDUSTRIES
+      </h1>
+      <p className=" text-3xl  sm:text-center p-12 text-gray-500 ">
+        Bulsoft produly serve range of industry verticals with domain experts,
+        who have in-depth knowledge of every industry vertical we serve.
+        Following are the verticals we are operating in.
+      </p>
+      <hr className="w-1/5 mx-auto" />
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-3 justify-items-center">
+        <div className="py-10">
+          <div className="rounded overflow-hidden shadow-lg max-w-sm">
             <Image
-              className="w-full pb-6"
-              src="/banks.jpg"
-              width={300}
-              height={300}
+              className="w-full"
+              src="/bank.jpg"
+              alt="industries"
+              width={400}
+              height={400}
             />
-            <div className="px-6 pb-6 ">
-              <div className="font-bold text-xl mb-2 ">BANKING</div>
-              <p className="text-gray-700 text-xl ">
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl font-bold mb-2">Banking</div>
+              <p className=" text-gray-500 ">
                 In today’s era of digital transformation, Banks and Financial
                 institutions offer wide range of online products and services to
                 reach out to end users worldwide. Though multi-channel
@@ -46,17 +38,18 @@ const Industries = () => {
             </div>
           </div>
         </div>
-        <div className="pl-24 pr-24 pt-14">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+        <div className="py-10">
+          <div className="rounded overflow-hidden shadow-lg max-w-sm">
             <Image
-              className="w-full "
+              className="w-full"
               src="/insur.jpg"
-              width={300}
-              height={300}
+              alt="industries"
+              width={400}
+              height={400}
             />
-            <div className="px-6 py-6 ">
-              <div className="font-bold text-xl mb-2">INSURANCE</div>
-              <p className="text-gray-700 text-xl pb-24">
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl font-bold mb-2">Insurance</div>
+              <p className="pb-16 text-gray-500">
                 Insurance marketplace is witnessing rapid changes due to
                 introduction of newer and more innovative products and at a much
                 faster pace than usual. Organizations are required to respond in
@@ -67,12 +60,18 @@ const Industries = () => {
             </div>
           </div>
         </div>
-        <div className="pt-14">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <Image className="w-full" src="/pay.jpg" width={300} height={300} />
-            <div className="px-6 py-6">
-              <div className="font-bold text-xl mb-2">PAYMENT</div>
-              <p className="text-gray-700 text-xl pb-16">
+        <div className="py-10">
+          <div className="rounded overflow-hidden shadow-lg max-w-sm">
+            <Image
+              className="w-full"
+              src="/pay.jpg"
+              alt="industries"
+              width={400}
+              height={400}
+            />
+            <div className="px-6 py-4">
+              <div className="font-bold font-bold text-xl mb-2">Payment</div>
+              <p className="pb-16 text-gray-500">
                 The payments industry is facing rapid changes world-wide due to
                 demands in regulations, new payment instruments and channels,
                 increasing transaction volumes, consolidation, restructuring,
