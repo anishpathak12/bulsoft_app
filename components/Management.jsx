@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import requireMgmt from "../public/requireMgmt.webp"
+// import requireMgmt from "../public/requireMgmt.webp"
 
 const Management = ({img, heading1, heading2, para, lists, listHeading }) => {
     return (
